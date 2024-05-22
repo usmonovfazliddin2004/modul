@@ -1,0 +1,129 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: green;
+}
+.wrapper {
+  margin: auto;
+  width: 400px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: 10%;
+  padding-top: 16px;
+  padding-left: 16px;
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+.wrapper div:nth-child(1) {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#image {
+  cursor: pointer;
+}
+.container {
+  width: 250px;
+  height: 50%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-left: 8px;
+}
+.container ul li a {
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 36px;
+  color: black;
+}
+li {
+  list-style: none;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: green;
+  }
+  .wrapper {
+    margin: auto;
+    width: 400px;
+    height: 420px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10%;
+    padding-top: 16px;
+    padding-left: 16px;
+    display: flex;
+    gap: 40px;
+    position: relative;
+  }
+  .wrapper div:nth-child(1) {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #image {
+    cursor: pointer;
+  }
+  .container {
+    width: 250px;
+    height: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 8px;
+    animation: slideIn 1s forwards; 
+  }
+  
+  .container ul {
+    animation: fadeIn 2s forwards; 
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .container ul li a {
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 36px;
+    color: black;
+  }
+  li {
+    list-style: none;
+  }
+  
